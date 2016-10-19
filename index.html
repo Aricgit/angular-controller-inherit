@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Controller Inherit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="text/css" rel="stylesheet" href="libs/bootstrap-3.3.0/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="libs/jquery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap-3.3.0/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libs/angular-1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="libs/angular-1.5.8/angular-route.min.js"></script>
+    <script type="text/javascript" src="resource/index.js"></script>
+</head>
+<body>
+<div style="margin-top: 50px;padding-left: 50px;">
+    <div ng-controller="FormController">
+        <button class="btn btn-default" ng-click="parentFunction()">调用父类的方法</button>
+        <button class="btn btn-default" ng-click="callSelfFunction()">调用本身的方法</button>
+
+        <button class="btn btn-default" ng-click="callFunction1()">对父类方法进行扩展</button>
+        <button class="btn btn-default" ng-click="callFunction2()">对父类方法进行重写</button>
+    </div>
+</div>
+</body>
+</html>
